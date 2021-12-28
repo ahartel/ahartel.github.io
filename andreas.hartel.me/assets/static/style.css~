@@ -3,11 +3,6 @@ html {
     max-width: 600px;
 }
 
-body {
-    font-family: sans-serif;
-    font-size: large;
-    line-height: 150%;
-}
 
 .center {
   display: block;
