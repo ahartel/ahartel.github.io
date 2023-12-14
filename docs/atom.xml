@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>My blog!</title>
     <subtitle>placeholder description text for your blog!</subtitle>
-    <link href="https://ahartel.github.io/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://ahartel.github.io"/>
+    <link href="https://andreas.hartel.me/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://andreas.hartel.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2021-11-02T00:00:00+00:00</updated>
-    <id>https://ahartel.github.io/atom.xml</id>
+    <id>https://andreas.hartel.me/atom.xml</id>
     <entry xml:lang="en">
         <title>Groups of order 4</title>
         <published>2021-11-02T00:00:00+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://ahartel.github.io/groups-of-order-4/" type="text/html"/>
-        <id>https://ahartel.github.io/groups-of-order-4/</id>
+        <link rel="alternate" href="https://andreas.hartel.me/groups-of-order-4/" type="text/html"/>
+        <id>https://andreas.hartel.me/groups-of-order-4/</id>
         
         <summary type="html">&lt;p&gt;The other day, I wanted to explore all finite groups of low order.
 This is something that has already nicely been done by the &lt;a href=&quot;https:&#x2F;&#x2F;nathancarter.github.io&#x2F;group-explorer&#x2F;index.html&quot;&gt;Group Explorer&lt;&#x2F;a&gt; project
@@ -32,8 +32,8 @@ This always feels a bit like doing a Sudoku to me.&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://ahartel.github.io/creativity/" type="text/html"/>
-        <id>https://ahartel.github.io/creativity/</id>
+        <link rel="alternate" href="https://andreas.hartel.me/creativity/" type="text/html"/>
+        <id>https://andreas.hartel.me/creativity/</id>
         
         <summary type="html">&lt;p&gt;I have written before &lt;a href=&quot;&#x2F;blog&#x2F;making-a-mess-is-part-of-being-creative&#x2F;&quot;&gt;about creativity&lt;&#x2F;a&gt; and I&#x27;ve thought and read about it a bit recently.
 There are 2 main things that I have recently discovered:
@@ -50,8 +50,8 @@ But as trivial as it sounds, it is also non-trivial at the same time.&lt;&#x2F;p
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://ahartel.github.io/math-test/" type="text/html"/>
-        <id>https://ahartel.github.io/math-test/</id>
+        <link rel="alternate" href="https://andreas.hartel.me/math-test/" type="text/html"/>
+        <id>https://andreas.hartel.me/math-test/</id>
         
         <summary type="html">&lt;p&gt;This page tests math support.&lt;&#x2F;p&gt;
 </summary>
@@ -64,8 +64,8 @@ But as trivial as it sounds, it is also non-trivial at the same time.&lt;&#x2F;p
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://ahartel.github.io/the-world-of-thinking/" type="text/html"/>
-        <id>https://ahartel.github.io/the-world-of-thinking/</id>
+        <link rel="alternate" href="https://andreas.hartel.me/the-world-of-thinking/" type="text/html"/>
+        <id>https://andreas.hartel.me/the-world-of-thinking/</id>
         
         <summary type="html">&lt;p&gt;Last week, I watched the documentary &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;ondemand&#x2F;theworldofthinking&quot;&gt;&amp;quot;The world of Thinking&amp;quot; on Vimeo.&lt;&#x2F;a&gt;
 I chose to watch it because it portraits the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Institute_for_Advanced_Study&quot;&gt;Institute of Advanced Study&lt;&#x2F;a&gt; (IAS for short) which is a fascinating place to me.
@@ -83,8 +83,8 @@ The purpose of the Institute is to allow a few select scientists to focus as goo
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://ahartel.github.io/first-post/" type="text/html"/>
-        <id>https://ahartel.github.io/first-post/</id>
+        <link rel="alternate" href="https://andreas.hartel.me/first-post/" type="text/html"/>
+        <id>https://andreas.hartel.me/first-post/</id>
         
         <summary type="html">&lt;p&gt;If I could write a blog from scratch, what would I write about?
 Why would I want to write a blog in the first place?
@@ -104,8 +104,8 @@ This time I should try to write simpler and more frequent blog posts.&lt;&#x2F;p
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://ahartel.github.io/reinforcement-learning-1/" type="text/html"/>
-        <id>https://ahartel.github.io/reinforcement-learning-1/</id>
+        <link rel="alternate" href="https://andreas.hartel.me/reinforcement-learning-1/" type="text/html"/>
+        <id>https://andreas.hartel.me/reinforcement-learning-1/</id>
         
         <summary type="html">&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;&#x2F;h2&gt;
 &lt;p&gt;After I&#x27;ve started working with reward-modulated STDP in spiking neural networks, I got curious about the background of research on which it was based. This led me to the book by Richard Sutton and Andrew Barto called &amp;quot;Reinforcement Learning&amp;quot;.  The book is from 1998 and it&#x27;s freely readable on the internet! In the book&#x27;s Introduction they cover the example of an agent learning to beat a given (imperfect) agent in the game of Tic Tac Toe. Two remarks have to be made: 1. The agent has to be imperfect because a perfect agent in Tic Tac Toe (if it&#x27;s the one doing the first move) can never be beaten. 2. The agent does not learn to play Tic Tac Toe, this skill is assumed, but it learns a value map for its policy.&lt;&#x2F;p&gt;
@@ -119,8 +119,8 @@ This time I should try to write simpler and more frequent blog posts.&lt;&#x2F;p
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://ahartel.github.io/making-a-mess-is-part-of-being-creative/" type="text/html"/>
-        <id>https://ahartel.github.io/making-a-mess-is-part-of-being-creative/</id>
+        <link rel="alternate" href="https://andreas.hartel.me/making-a-mess-is-part-of-being-creative/" type="text/html"/>
+        <id>https://andreas.hartel.me/making-a-mess-is-part-of-being-creative/</id>
         
         <summary type="html">&lt;p&gt;Opposite to the Telegraph headline &lt;a href=&quot;http:&#x2F;&#x2F;www.telegraph.co.uk&#x2F;news&#x2F;newstopics&#x2F;howaboutthat&#x2F;10225664&#x2F;Having-a-messy-desk-makes-you-more-creative.html&quot;&gt;Having a messy desk makes you &#x27;more creative&#x27;&lt;&#x2F;a&gt;, a messy desk does probably not make you more creative, but creative people produce more mess. Or, in other words, making a mess is definitely a part of the creative process.&lt;&#x2F;p&gt;
 </summary>

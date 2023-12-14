@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://ahartel.github.io"
+base_url = "https://andreas.hartel.me"
 
 # Used in RSS by default
 title = "My blog!"
