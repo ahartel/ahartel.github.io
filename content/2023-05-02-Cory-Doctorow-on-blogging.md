@@ -15,7 +15,7 @@ The Memex Method. What reasonated most with me were two ideas:
 > The very act of recording your actions and impressions is itself powerfully mnemonic,
   fixing the moment more durably in your memory so that it’s easier to recall in future,
   even if you never consult your notes.
-
+<!-- more -->
 First, there is the idea that just collecting what interests you and using the writing process to deepen memory.
 
 > These repeated acts of public description adds each idea to a supersaturated,
