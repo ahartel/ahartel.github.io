@@ -8,7 +8,7 @@ tags = ["blogging"]
 
 I recently started following pluralistic.net by Cory Doctorow.
 
-Today's article, https://pluralistic.net/2023/05/02/wunderkammer/, contained a link to an article
+Today's article, [https://pluralistic.net/2023/05/02/wunderkammer/](https://pluralistic.net/2023/05/02/wunderkammer/), contained a link to an article
 in which he describes his blogging method. That blogging methodology article is called,
 The Memex Method. What reasonated most with me were two ideas:
 
@@ -32,4 +32,4 @@ the reason for this interest of mine might be the fact that I entertain a blog m
 which I write way too irregularly.
 
 In the past, one of those articles that I liked was the post by Matt Mullenweg on why he blogs:
-https://ma.tt/2014/01/intrinsic-blogging/. But I found Doctorow's arguments much more convincing.
+[https://ma.tt/2014/01/intrinsic-blogging/](https://ma.tt/2014/01/intrinsic-blogging/). But I found Doctorow's arguments much more convincing.
