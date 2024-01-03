@@ -3,7 +3,7 @@ title = "Videos about Caley's theorem"
 date = 2022-01-03
 
 [taxonomies]
-tags = ["linkage", "twitter archive"]
+tags = ["math", "twitter archive"]
 +++
 
 I recently saw a video by Michael Penn
