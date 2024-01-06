@@ -6,7 +6,7 @@ date = 2022-01-08
 tags = ["math", "twitter archive"]
 +++
 
-In this thread post, I want to try to give a mostly-visual proof of an exercise I found in Dixon's
+In this post, I want to try to give a mostly-visual proof of an exercise I found in Dixon's
 book "Problems in Group Theory":
 > Show that the [alternating group](https://en.wikipedia.org/wiki/Alternating_group) A4 has no subgroup of order 6.
 <!-- more -->
