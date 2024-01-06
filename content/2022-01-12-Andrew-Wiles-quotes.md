@@ -1,5 +1,5 @@
 +++
-title = "Two quotest by Andrew Wiles"
+title = "Two quotes by Andrew Wiles"
 date = 2022-01-12
 
 [taxonomies]
