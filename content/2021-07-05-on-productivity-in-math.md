@@ -21,6 +21,7 @@ breakthrough. This leads to a downward spiral because you think that it is your
 job to work on or solve this problem and you can't even get yourself to do your
 job. But this is probably false and Terry Tao knew this for a long time.
 
+<!-- more -->
 This is wrong because:
 1. nobody tells you which problem you should solve
 2. there rarely is a discrete single step from not solved to solved when working on a problem
