@@ -22,7 +22,7 @@ describes the evolution of the code.
 
 <!-- more -->
 
-```Rust
+```rust
 use itertools::Itertools;
 
 fn score(rolls: Vec<(u32, u32)>) -> u32 {

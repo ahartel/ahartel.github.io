@@ -32,11 +32,10 @@ highlight_code = true
 # Syntax highlighting theme. See:
 # https://www.getzola.org/documentation/getting-started/configuration/#syntax-highlighting
 # for more information and themes built into Zola.
-highlight_theme = "axar" # Other dark themes that work: "1337", "agola-dark",
-                         # "visual-studio-dark"
+highlight_theme = "base16-ocean-dark"
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 
 # Built in taxonomies of zerm.
 taxonomies = [
