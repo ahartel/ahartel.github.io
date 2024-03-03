@@ -6,7 +6,7 @@ date = 2024-03-03
 tags = ["tdd", "code", "software engineering"]
 +++
 
-In a [recent blog post](@2024-03-03-tdd-katas.md) I have collected a couple of TDD
+In a [recent blog post](@/2024-03-03-tdd-katas.md) I have collected a couple of TDD
 Katas. In this post, I would like to post a solution I found to the Bowling Game Kata.
 
 Uncle Bob breaks this kata down into the following five tests:
