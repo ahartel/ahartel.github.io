@@ -1,5 +1,5 @@
 +++
-title = "Collecting TDD Kats"
+title = "Solution to the Bowling TDD Kata"
 date = 2024-03-03
 
 [taxonomies]
