@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>My blog!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta name="description" content="placeholder description text for your blog!"/>
+    <meta property="og:title" content="My blog! -&nbsp;placeholder description text for your blog!" />
+    <meta property="og:type" content="website"/><meta property="og:url" content="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;"/><meta property="og:description" content="placeholder description text for your blog!"/>
+    <link rel="preload" href="https://andreas.hartel.me/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://andreas.hartel.me/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://andreas.hartel.me/style.css?h=97e262212a0704163528">
+    <link rel="stylesheet" href=" https://andreas.hartel.me/color/orange.css?h=a5a5d7faf9d4bc3e0b18">
+    
+<link rel="alternate" type="application/atom+xml" title="My blog! RSS" href="https://andreas.hartel.me/atom.xml"></head>
+    <body>
+        <div class="container">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="&#x2F;">
+    <div class="logo">
+        ahartel.github.io
+    </div>
+</a>
+        </div>
+        <div class="menu-trigger">menu</div>
+    </div>
+    
+    <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+            
+            
+                    <li>
+                        <a href="
+    
+        https://andreas.hartel.me
+    
+">home</a>
+                    </li>
+                
+                    <li>
+                        <a href="
+    
+        https://andreas.hartel.me/about
+    
+">about</a>
+                    </li>
+                
+            </ul>
+
+        <ul class="menu__inner menu__inner--mobile">
+            
+        <li>
+            <a href="
+    
+        https://andreas.hartel.me
+    
+">home</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://andreas.hartel.me/about
+    
+">about</a>
+        </li>
+        </ul>
+    </nav>
+
+    </header>
+<div class="content">
+<section class="posts"><div class="post on-list">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;tdd-bowling-kata-solved&#x2F;">Solution to the Bowling TDD Kata</a>
+            </h1>
+        </header>
+        
+        
+        
+    <div class="post-meta">
+        <span class="post-date">2024.03.03
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    ::
+    #<a href="https://andreas.hartel.me/tags/tdd/">tdd</a>
+        
+    #<a href="https://andreas.hartel.me/tags/code/">code</a>
+        
+    #<a href="https://andreas.hartel.me/tags/software-engineering/">software engineering</a>
+        
+    
+            
+        
+    </div>
+<div class="post-content">
+            <p>In a <a href="https://andreas.hartel.me/tdd-katas/">recent blog post</a> I have collected a couple of TDD
+Katas. In this post, I would like to post a solution I found to the Bowling Game Kata.</p>
+<p>Uncle Bob breaks this kata down into the following five tests:</p>
+<ol>
+<li>Gutter game scores zero - When you roll all misses, you get a total score of zero.</li>
+<li>All ones scores 20 - When you knock down one pin with each ball, your total score is 20.</li>
+<li>A spare in the first frame, followed by three pins, followed by all misses scores 16.</li>
+<li>A strike in the first frame, followed by three and then four pins, followed by all misses, scores 24.</li>
+<li>A perfect game (12 strikes) scores 300.</li>
+</ol>
+<p>What follows is a Rust implementation that solves these tests in this order and
+describes the evolution of the code.</p>
+
+            </div>
+        <div>
+            <a class="read-more button" href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;tdd-bowling-kata-solved&#x2F;">read more →</a>
+        </div>
+        </div>
+    <div class="post on-list">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;tdd-katas&#x2F;">Collecting TDD Katas</a>
+            </h1>
+        </header>
+        
+        
+        
+    <div class="post-meta">
+        <span class="post-date">2024.03.03
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    ::
+    #<a href="https://andreas.hartel.me/tags/tdd/">tdd</a>
+        
+    #<a href="https://andreas.hartel.me/tags/code/">code</a>
+        
+    #<a href="https://andreas.hartel.me/tags/software-engineering/">software engineering</a>
+        
+    
+            
+        
+    </div>
+<div class="post-content">
+            <p>I'm not sure why I didn't have this idea earlier.
+The idea to collect TDD Katas here on this blog seems kind of obvious to me.
+But anyway, I've been fascinated by this idea ever since I saw the first Kata in
+Uncle Bob Martin's Clean Code video series. If I remember correctly, then I think
+I saw him do</p>
+<ul>
+<li><a href="https://cleancoders.com/episode/clean-code-episode-4-sc-1-stack">the Stack Kata</a></li>
+<li><a href="http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata">the prime factors Kata</a></li>
+<li><a href="https://cleancoders.com/episode/clean-code-episode-6-p2">the bowling score Kata</a></li>
+</ul>
+<p>Recently then, I ran into this blog post by Peter Provost called
+<a href="http://web.archive.org/web/20220521090515/http://www.peterprovost.org/blog/2012/05/02/kata-the-only-way-to-learn-tdd">Kata - the Only Way to Learn TDD</a>.
+This blog post mentions 2 TDD Katas, with an exact sequence of recommended tests
+which I would like to collect here for easier reference.</p>
+
+            </div>
+        <div>
+            <a class="read-more button" href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;tdd-katas&#x2F;">read more →</a>
+        </div>
+        </div>
+    <div class="post on-list">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;cory-doctorow-on-blogging&#x2F;">Cory Doctorow on blogging</a>
+            </h1>
+        </header>
+        
+        
+        
+    <div class="post-meta">
+        <span class="post-date">2023.05.02
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    ::
+    #<a href="https://andreas.hartel.me/tags/blogging/">blogging</a>
+        
+    
+            
+        
+    </div>
+<div class="post-content">
+            <p>I recently started following pluralistic.net by Cory Doctorow.</p>
+<p>Today's article, <a href="https://pluralistic.net/2023/05/02/wunderkammer/">https://pluralistic.net/2023/05/02/wunderkammer/</a>, contained a link to an article
+in which he describes his blogging method. That blogging methodology article is called,
+The Memex Method. What reasonated most with me were two ideas:</p>
+<blockquote>
+<p>The very act of recording your actions and impressions is itself powerfully mnemonic,
+fixing the moment more durably in your memory so that it’s easier to recall in future,
+even if you never consult your notes.</p>
+</blockquote>
+
+            </div>
+        <div>
+            <a class="read-more button" href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;cory-doctorow-on-blogging&#x2F;">read more →</a>
+        </div>
+        </div>
+    <div class="post on-list">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;linkage&#x2F;">Linkage</a>
+            </h1>
+        </header>
+        
+        
+        
+    <div class="post-meta">
+        <span class="post-date">2023.02.18
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    ::
+    #<a href="https://andreas.hartel.me/tags/linkage/">linkage</a>
+        
+    
+            
+        
+    </div>
+<div class="post-content">
+            <p>Collecting a bunch of links here that I have meant to record for a longer time.</p>
+
+            </div>
+        <div>
+            <a class="read-more button" href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;linkage&#x2F;">read more →</a>
+        </div>
+        </div>
+    <div class="post on-list">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;how-to-write-a-book&#x2F;">How to write a book</a>
+            </h1>
+        </header>
+        
+        
+        
+    <div class="post-meta">
+        <span class="post-date">2023.01.11
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    ::
+    #<a href="https://andreas.hartel.me/tags/art/">art</a>
+        
+    #<a href="https://andreas.hartel.me/tags/twitter-archive/">twitter archive</a>
+        
+    
+            
+        
+    </div>
+<div class="post-content">
+            </div>
+        </div>
+    </section>
+</div>
+    <div class="pagination">
+        <div class="pagination__buttons">
+            
+                <span class="button next">
+                    <a href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;page&#x2F;2&#x2F;">
+                        <span class="button__text">older</span>
+                        <span class="button__icon">→</span>
+                    </a>
+                </span>
+            </div>
+    </div>
+<footer class="footer">
+                    <div class="footer__inner"><div class="copyright">
+            <span>© 2024 <a href="https://github.com/ejmg/zerm">zerm</a> :: Powered by <a href="https://www.getzola.org/">Zola</a></span>
+            <span>:: Theme made by <a href="https://github.com/ejmg">ejmg</a></span>
+        </div>
+    <script type="text/javascript" src="https://andreas.hartel.me/assets/js/main.js"></script>
+</div>
+                    
+
+                </footer></div>
+    </body>
+</html>

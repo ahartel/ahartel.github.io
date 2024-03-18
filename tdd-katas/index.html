@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Collecting TDD Katas - you!</title>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta name="description" content="placeholder description text for your blog! Collecting TDD Katas "/><meta name="keywords" content="tdd, code, software engineering" />
+    <meta property="og:title" content="My blog! -&nbsp;Collecting TDD Katas" />
+    <meta property="og:type" content="website"/><meta property="og:url" content="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;tdd-katas&#x2F;"/><meta property="og:description" content="placeholder description text for your blog!"/>
+    <link rel="preload" href="https://andreas.hartel.me/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://andreas.hartel.me/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://andreas.hartel.me/style.css?h=97e262212a0704163528">
+    <link rel="stylesheet" href=" https://andreas.hartel.me/color/orange.css?h=a5a5d7faf9d4bc3e0b18">
+    
+<link rel="alternate" type="application/atom+xml" title="My blog! RSS" href="https://andreas.hartel.me/atom.xml"></head>
+    <body>
+        <div class="container">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="&#x2F;">
+    <div class="logo">
+        ahartel.github.io
+    </div>
+</a>
+        </div>
+        <div class="menu-trigger">menu</div>
+    </div>
+    
+    <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+            
+            
+                    <li>
+                        <a href="
+    
+        https://andreas.hartel.me
+    
+">home</a>
+                    </li>
+                
+                    <li>
+                        <a href="
+    
+        https://andreas.hartel.me/about
+    
+">about</a>
+                    </li>
+                
+            </ul>
+
+        <ul class="menu__inner menu__inner--mobile">
+            
+        <li>
+            <a href="
+    
+        https://andreas.hartel.me
+    
+">home</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://andreas.hartel.me/about
+    
+">about</a>
+        </li>
+        </ul>
+    </nav>
+
+    </header>
+<div class="content"><article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;tdd-katas&#x2F;">Collecting TDD Katas</a>
+            </h1>
+            
+    <div class="post-meta">
+        <span class="post-date">2024.03.03
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    ::
+    #<a href="https://andreas.hartel.me/tags/tdd/">tdd</a>
+        
+    #<a href="https://andreas.hartel.me/tags/code/">code</a>
+        
+    #<a href="https://andreas.hartel.me/tags/software-engineering/">software engineering</a>
+        
+    
+            
+        
+    </div>
+
+            
+    
+</header><p>I'm not sure why I didn't have this idea earlier.
+The idea to collect TDD Katas here on this blog seems kind of obvious to me.
+But anyway, I've been fascinated by this idea ever since I saw the first Kata in
+Uncle Bob Martin's Clean Code video series. If I remember correctly, then I think
+I saw him do</p>
+<ul>
+<li><a href="https://cleancoders.com/episode/clean-code-episode-4-sc-1-stack">the Stack Kata</a></li>
+<li><a href="http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata">the prime factors Kata</a></li>
+<li><a href="https://cleancoders.com/episode/clean-code-episode-6-p2">the bowling score Kata</a></li>
+</ul>
+<p>Recently then, I ran into this blog post by Peter Provost called
+<a href="http://web.archive.org/web/20220521090515/http://www.peterprovost.org/blog/2012/05/02/kata-the-only-way-to-learn-tdd">Kata - the Only Way to Learn TDD</a>.
+This blog post mentions 2 TDD Katas, with an exact sequence of recommended tests
+which I would like to collect here for easier reference.</p>
+<span id="continue-reading"></span>
+<p>Before Peter goes into details about the Katas, he mentions the following
+advice, which also gives the blog post its title:&quot;</p>
+<blockquote>
+<p>Lately I’ve been asked by more and more people inside Microsoft to help them really learn to do TDD. [...]
+My guidance to them is simple. Do a TDD kata every morning for two weeks.
+Limit yourself to 30 minutes each morning. Then pick another kata and do it again.</p>
+</blockquote>
+<p>Let's now look at the 2 Katas which he mentions in detail.</p>
+<h2 id="the-bowling-game-kata">The Bowling Game Kata</h2>
+<p>Uncle Bob breaks this kata down into the following five tests:</p>
+<ol>
+<li>Gutter game scores zero - When you roll all misses, you get a total score of zero.</li>
+<li>All ones scores 20 - When you knock down one pin with each ball, your total score is 20.</li>
+<li>A spare in the first frame, followed by three pins, followed by all misses scores 16.</li>
+<li>A strike in the first frame, followed by three and then four pins, followed by all misses, scores 24.</li>
+<li>A perfect game (12 strikes) scores 300.</li>
+</ol>
+<h2 id="the-string-calculator-kata">The String Calculator Kata</h2>
+<ol>
+<li>An empty string returns zero</li>
+<li>A single number returns the value</li>
+<li>Two numbers, comma delimited, returns the sum</li>
+<li>Two numbers, newline delimited, returns the sum</li>
+<li>Three numbers, delimited either way, returns the sum</li>
+<li>Negative numbers throw an exception</li>
+<li>Numbers greater than 1000 are ignored</li>
+<li>A single char delimiter can be defined on the first line (e.g. //# for a ‘#’ as the delimiter)</li>
+<li>A multi char delimiter can be defined on the first line (e.g. //[###] for ‘###’ as the delimiter)</li>
+<li>Many single or multi-char delimiters can be defined (each wrapped in square brackets)</li>
+</ol>
+
+
+        
+    
+
+        
+        
+    </article></div>
+    <div class="pagination">
+        <div class="pagination__buttons">
+            </div>
+    </div>
+<footer class="footer">
+                    <div class="footer__inner"><div class="copyright">
+            <span>© 2024 <a href="https://github.com/ejmg/zerm">zerm</a> :: Powered by <a href="https://www.getzola.org/">Zola</a></span>
+            <span>:: Theme made by <a href="https://github.com/ejmg">ejmg</a></span>
+        </div>
+    <script type="text/javascript" src="https://andreas.hartel.me/assets/js/main.js"></script>
+</div>
+                    
+
+                </footer></div>
+    </body>
+</html>

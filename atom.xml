@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>My blog!</title>
+    <subtitle>placeholder description text for your blog!</subtitle>
+    <link href="https://andreas.hartel.me/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://andreas.hartel.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-03T00:00:00+00:00</updated>
+    <id>https://andreas.hartel.me/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Solution to the Bowling TDD Kata</title>
+        <published>2024-03-03T00:00:00+00:00</published>
+        <updated>2024-03-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/tdd-bowling-kata-solved/" type="text/html"/>
+        <id>https://andreas.hartel.me/tdd-bowling-kata-solved/</id>
+        
+        <summary type="html">&lt;p&gt;In a &lt;a href=&quot;https:&#x2F;&#x2F;andreas.hartel.me&#x2F;tdd-katas&#x2F;&quot;&gt;recent blog post&lt;&#x2F;a&gt; I have collected a couple of TDD
+Katas. In this post, I would like to post a solution I found to the Bowling Game Kata.&lt;&#x2F;p&gt;
+&lt;p&gt;Uncle Bob breaks this kata down into the following five tests:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Gutter game scores zero - When you roll all misses, you get a total score of zero.&lt;&#x2F;li&gt;
+&lt;li&gt;All ones scores 20 - When you knock down one pin with each ball, your total score is 20.&lt;&#x2F;li&gt;
+&lt;li&gt;A spare in the first frame, followed by three pins, followed by all misses scores 16.&lt;&#x2F;li&gt;
+&lt;li&gt;A strike in the first frame, followed by three and then four pins, followed by all misses, scores 24.&lt;&#x2F;li&gt;
+&lt;li&gt;A perfect game (12 strikes) scores 300.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;What follows is a Rust implementation that solves these tests in this order and
+describes the evolution of the code.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Collecting TDD Katas</title>
+        <published>2024-03-03T00:00:00+00:00</published>
+        <updated>2024-03-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/tdd-katas/" type="text/html"/>
+        <id>https://andreas.hartel.me/tdd-katas/</id>
+        
+        <summary type="html">&lt;p&gt;I&#x27;m not sure why I didn&#x27;t have this idea earlier.
+The idea to collect TDD Katas here on this blog seems kind of obvious to me.
+But anyway, I&#x27;ve been fascinated by this idea ever since I saw the first Kata in
+Uncle Bob Martin&#x27;s Clean Code video series. If I remember correctly, then I think
+I saw him do&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cleancoders.com&#x2F;episode&#x2F;clean-code-episode-4-sc-1-stack&quot;&gt;the Stack Kata&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;butunclebob.com&#x2F;ArticleS.UncleBob.ThePrimeFactorsKata&quot;&gt;the prime factors Kata&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cleancoders.com&#x2F;episode&#x2F;clean-code-episode-6-p2&quot;&gt;the bowling score Kata&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Recently then, I ran into this blog post by Peter Provost called
+&lt;a href=&quot;http:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20220521090515&#x2F;http:&#x2F;&#x2F;www.peterprovost.org&#x2F;blog&#x2F;2012&#x2F;05&#x2F;02&#x2F;kata-the-only-way-to-learn-tdd&quot;&gt;Kata - the Only Way to Learn TDD&lt;&#x2F;a&gt;.
+This blog post mentions 2 TDD Katas, with an exact sequence of recommended tests
+which I would like to collect here for easier reference.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Cory Doctorow on blogging</title>
+        <published>2023-05-02T00:00:00+00:00</published>
+        <updated>2023-05-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/cory-doctorow-on-blogging/" type="text/html"/>
+        <id>https://andreas.hartel.me/cory-doctorow-on-blogging/</id>
+        
+        <summary type="html">&lt;p&gt;I recently started following pluralistic.net by Cory Doctorow.&lt;&#x2F;p&gt;
+&lt;p&gt;Today&#x27;s article, &lt;a href=&quot;https:&#x2F;&#x2F;pluralistic.net&#x2F;2023&#x2F;05&#x2F;02&#x2F;wunderkammer&#x2F;&quot;&gt;https:&#x2F;&#x2F;pluralistic.net&#x2F;2023&#x2F;05&#x2F;02&#x2F;wunderkammer&#x2F;&lt;&#x2F;a&gt;, contained a link to an article
+in which he describes his blogging method. That blogging methodology article is called,
+The Memex Method. What reasonated most with me were two ideas:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The very act of recording your actions and impressions is itself powerfully mnemonic,
+fixing the moment more durably in your memory so that it’s easier to recall in future,
+even if you never consult your notes.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Linkage</title>
+        <published>2023-02-18T00:00:00+00:00</published>
+        <updated>2023-02-18T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/linkage/" type="text/html"/>
+        <id>https://andreas.hartel.me/linkage/</id>
+        
+        <summary type="html">&lt;p&gt;Collecting a bunch of links here that I have meant to record for a longer time.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How to write a book</title>
+        <published>2023-01-11T00:00:00+00:00</published>
+        <updated>2023-01-11T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/how-to-write-a-book/" type="text/html"/>
+        <id>https://andreas.hartel.me/how-to-write-a-book/</id>
+        
+        <content type="html">&lt;p&gt;Austin Kleon recently posted the following text and image on Twitter:
+https:&#x2F;&#x2F;twitter.com&#x2F;austinkleon&#x2F;status&#x2F;1613276201623212037&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How to write a book
+(from Ruth Krauss’s HOW TO MAKE AN EARTHQUAKE — drawings by Crockett Johnson)&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;andreas.hartel.me&#x2F;how-to-write-a-book&#x2F;how-to-write-a-book.jpg&quot; alt=&quot;How to write a book&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My first blackout poems</title>
+        <published>2022-02-23T00:00:00+00:00</published>
+        <updated>2022-02-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/blackout-poems/" type="text/html"/>
+        <id>https://andreas.hartel.me/blackout-poems/</id>
+        
+        <content type="html">&lt;p&gt;Blackout poems are a thing that has been made popular by &lt;a href=&quot;https:&#x2F;&#x2F;austinkleon.com&#x2F;newspaperblackout&#x2F;&quot;&gt;Austin Kleon&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;My first blackout poem:
+&lt;img src=&quot;https:&#x2F;&#x2F;andreas.hartel.me&#x2F;blackout-poems&#x2F;things-with-people.jpg&quot; alt=&quot;Things with people&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;And it comes with a caveat:
+&lt;img src=&quot;https:&#x2F;&#x2F;andreas.hartel.me&#x2F;blackout-poems&#x2F;errors-can-happen.jpg&quot; alt=&quot;Errors can happen&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Two quotes by Andrew Wiles</title>
+        <published>2022-01-12T00:00:00+00:00</published>
+        <updated>2022-01-12T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/andrew-wiles-quotes/" type="text/html"/>
+        <id>https://andreas.hartel.me/andrew-wiles-quotes/</id>
+        
+        <summary type="html">&lt;p&gt;Here&#x27;s a little thread post with two quotes 💬 from Andrew Wiles&#x27; Abel Prize
+interview. Those quotes helped me better understand what research (mathematics)
+feels like. &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=cWKAzX5U85Q&quot;&gt;Here&#x27;s a link to the interview&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Alternating Group</title>
+        <published>2022-01-08T00:00:00+00:00</published>
+        <updated>2022-01-08T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/alternating-group/" type="text/html"/>
+        <id>https://andreas.hartel.me/alternating-group/</id>
+        
+        <summary type="html">&lt;p&gt;In this post, I want to try to give a mostly-visual proof of an exercise I found in Dixon&#x27;s
+book &amp;quot;Problems in Group Theory&amp;quot;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Show that the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Alternating_group&quot;&gt;alternating group&lt;&#x2F;a&gt; A4 has no subgroup of order 6.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Videos about Caley&#x27;s theorem</title>
+        <published>2022-01-03T00:00:00+00:00</published>
+        <updated>2022-01-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/caleys-theorem/" type="text/html"/>
+        <id>https://andreas.hartel.me/caleys-theorem/</id>
+        
+        <summary type="html">&lt;p&gt;I recently saw a video by Michael Penn
+&lt;a href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;c&#x2F;MichaelPennMath&quot;&gt;https:&#x2F;&#x2F;youtube.com&#x2F;c&#x2F;MichaelPennMath&lt;&#x2F;a&gt; that explained
+Cayley&#x27;s theorem in #grouptheory very nicely and in a way that was very clear to me.&lt;&#x2F;p&gt;
+&lt;p&gt;On the other hand, I recently saw a video on the same topic by Richard Borcherds
+&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;AZUDhtnz-Do&quot;&gt;https:&#x2F;&#x2F;youtu.be&#x2F;AZUDhtnz-Do&lt;&#x2F;a&gt; that explained it in a more abstract way and resonated less well
+with me. I then wondered why my reception was so different?&lt;&#x2F;p&gt;
+&lt;p&gt;While I do like Borcherds&#x27; lecture videos in general, I guess that this particular one had a much
+less clear page layout or flow of thought. It was mixing in too many side tracks. And Penn&#x27;s black
+board was very nicely structured in this case.&lt;&#x2F;p&gt;
+&lt;p&gt;This also made it again clear to me how individual different people&#x27;s learning journeys in #math are.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Groups of order 4</title>
+        <published>2021-11-02T00:00:00+00:00</published>
+        <updated>2021-11-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/groups-of-order-4/" type="text/html"/>
+        <id>https://andreas.hartel.me/groups-of-order-4/</id>
+        
+        <summary type="html">&lt;p&gt;The other day, I wanted to explore all finite groups of low order.
+This is something that has already nicely been done by the &lt;a href=&quot;https:&#x2F;&#x2F;nathancarter.github.io&#x2F;group-explorer&#x2F;index.html&quot;&gt;Group Explorer&lt;&#x2F;a&gt; project
+and in the great &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=RnqwFpyqJFw&amp;list=PL8yHsr3EFj51pjBvvCPipgAT3SYpIiIsJ&quot;&gt;Group Theory lectures by Richard Borcherds&lt;&#x2F;a&gt;.
+I wanted to look into this myself and just started by producing multiplication tables of the first small groups.
+This always feels a bit like doing a Sudoku to me.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Creativity</title>
+        <published>2021-10-20T00:00:00+00:00</published>
+        <updated>2021-10-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/creativity/" type="text/html"/>
+        <id>https://andreas.hartel.me/creativity/</id>
+        
+        <summary type="html">&lt;p&gt;I have written before &lt;a href=&quot;&#x2F;blog&#x2F;making-a-mess-is-part-of-being-creative&#x2F;&quot;&gt;about creativity&lt;&#x2F;a&gt; and I&#x27;ve thought and read about it a bit recently.
+There are 2 main things that I have recently discovered:
+First, the idea that quantity leads to quality. I read &lt;a href=&quot;https:&#x2F;&#x2F;austinkleon.com&#x2F;2020&#x2F;12&#x2F;10&#x2F;quantity-leads-to-quality-the-origin-of-a-parable&#x2F;&quot;&gt;this article&lt;&#x2F;a&gt; on Austin Kleon&#x27;s blog (which I think I found via &lt;a href=&quot;http:&#x2F;&#x2F;mattragland.com&#x2F;&quot;&gt;Matt Ragland&lt;&#x2F;a&gt;&#x27;s newsletter.
+This idea is as simple as it is evident, the more you practice, the better you get.
+But as trivial as it sounds, it is also non-trivial at the same time.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Math test</title>
+        <published>2021-10-18T00:00:00+00:00</published>
+        <updated>2021-10-18T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/math-test/" type="text/html"/>
+        <id>https://andreas.hartel.me/math-test/</id>
+        
+        <summary type="html">&lt;p&gt;This page tests math support.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The world of Thinking</title>
+        <published>2021-10-18T00:00:00+00:00</published>
+        <updated>2021-10-18T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/the-world-of-thinking/" type="text/html"/>
+        <id>https://andreas.hartel.me/the-world-of-thinking/</id>
+        
+        <summary type="html">&lt;p&gt;Last week, I watched the documentary &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;ondemand&#x2F;theworldofthinking&quot;&gt;&amp;quot;The world of Thinking&amp;quot; on Vimeo.&lt;&#x2F;a&gt;
+I chose to watch it because it portraits the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Institute_for_Advanced_Study&quot;&gt;Institute of Advanced Study&lt;&#x2F;a&gt; (IAS for short) which is a fascinating place to me.
+It is located in Princeton, New Jersey, USA, and was the scientific home to many great and well-known mathematicians and theoretical physicists.
+It does indeed harbor scientists of other disciplines as well but those are of less interest to me.
+&amp;quot;The Institute&amp;quot;, as it is often called, is a special place in that it is the closest implementation of the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ivory_tower&quot;&gt;Ivory Tower&lt;&#x2F;a&gt; of Science.
+The purpose of the Institute is to allow a few select scientists to focus as good as possible on expanding the boundaries of human knowledge.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hello Website</title>
+        <published>2021-10-16T00:00:00+00:00</published>
+        <updated>2021-10-16T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/first-post/" type="text/html"/>
+        <id>https://andreas.hartel.me/first-post/</id>
+        
+        <summary type="html">&lt;p&gt;If I could write a blog from scratch, what would I write about?
+Why would I want to write a blog in the first place?
+I have had a blog in one form or another for many years but I never got into a habit of contiually posting to on them.
+The obvious answer to the question on what to write about is to write about the things that occupy my mind, that I find interesting or that move me.
+I guess the only way to learn what I want to write about is to just write about something for a while.
+Many people advocate this technique and I have tried it before but the attempt died of perfectionism.
+I guess some of the articles that I have published in my last run were just too ambitious and took too much time to research and prepare.
+This time I should try to write simpler and more frequent blog posts.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>On productivity in math</title>
+        <published>2021-07-05T00:00:00+00:00</published>
+        <updated>2021-07-05T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/on-productivity-in-math/" type="text/html"/>
+        <id>https://andreas.hartel.me/on-productivity-in-math/</id>
+        
+        <summary type="html">&lt;p&gt;Inspired by Terry Tao&#x27;s career advice page and by a recent interview on
+Math-Life balance, I collected here some thoughts on productivity in math. &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=V3SzIbVfeUw&quot;&gt;The
+recent interview&lt;&#x2F;a&gt; was with Saul
+Glasman and in it he mentioned, more as a side note, that math research is hard
+because one often gets stuck while working on a problem. It&#x27;s just very hard to
+focus for a long time on a single problem, seemingly without any progress. But
+the crucial insight here is, in my opinion, the fact that it only seems as if there is no progress.&lt;&#x2F;p&gt;
+&lt;p&gt;According to Glasman, when it happens that you work too long on a problem and
+then take a break, you can&#x27;t really get yourself to work on it again and start
+feeling bad because you think you must work on that one problem until there is a
+breakthrough. This leads to a downward spiral because you think that it is your
+job to work on or solve this problem and you can&#x27;t even get yourself to do your
+job. But this is probably false and Terry Tao knew this for a long time.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Reinforcement learning I - Temporal difference learning</title>
+        <published>2017-07-17T00:00:00+00:00</published>
+        <updated>2017-07-17T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/reinforcement-learning-1/" type="text/html"/>
+        <id>https://andreas.hartel.me/reinforcement-learning-1/</id>
+        
+        <summary type="html">&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;&#x2F;h2&gt;
+&lt;p&gt;After I&#x27;ve started working with reward-modulated STDP in spiking neural networks, I got curious about the background of research on which it was based. This led me to the book by Richard Sutton and Andrew Barto called &amp;quot;Reinforcement Learning&amp;quot;.  The book is from 1998 and it&#x27;s freely readable on the internet! In the book&#x27;s Introduction they cover the example of an agent learning to beat a given (imperfect) agent in the game of Tic Tac Toe. Two remarks have to be made: 1. The agent has to be imperfect because a perfect agent in Tic Tac Toe (if it&#x27;s the one doing the first move) can never be beaten. 2. The agent does not learn to play Tic Tac Toe, this skill is assumed, but it learns a value map for its policy.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Making a mess is part of being creative</title>
+        <published>2017-05-29T00:00:00+00:00</published>
+        <updated>2017-05-29T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://andreas.hartel.me/making-a-mess-is-part-of-being-creative/" type="text/html"/>
+        <id>https://andreas.hartel.me/making-a-mess-is-part-of-being-creative/</id>
+        
+        <summary type="html">&lt;p&gt;Opposite to the Telegraph headline &lt;a href=&quot;http:&#x2F;&#x2F;www.telegraph.co.uk&#x2F;news&#x2F;newstopics&#x2F;howaboutthat&#x2F;10225664&#x2F;Having-a-messy-desk-makes-you-more-creative.html&quot;&gt;Having a messy desk makes you &#x27;more creative&#x27;&lt;&#x2F;a&gt;, a messy desk does probably not make you more creative, but creative people produce more mess. Or, in other words, making a mess is definitely a part of the creative process.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Alternating Group - you!</title>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta name="description" content="placeholder description text for your blog! Alternating Group "/><meta name="keywords" content="math, twitter archive" />
+    <meta property="og:title" content="My blog! -&nbsp;Alternating Group" />
+    <meta property="og:type" content="website"/><meta property="og:url" content="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;alternating-group&#x2F;"/><meta property="og:description" content="placeholder description text for your blog!"/>
+    <link rel="preload" href="https://andreas.hartel.me/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://andreas.hartel.me/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://andreas.hartel.me/style.css?h=97e262212a0704163528">
+    <link rel="stylesheet" href=" https://andreas.hartel.me/color/orange.css?h=a5a5d7faf9d4bc3e0b18">
+    
+<link rel="alternate" type="application/atom+xml" title="My blog! RSS" href="https://andreas.hartel.me/atom.xml"></head>
+    <body>
+        <div class="container">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="&#x2F;">
+    <div class="logo">
+        ahartel.github.io
+    </div>
+</a>
+        </div>
+        <div class="menu-trigger">menu</div>
+    </div>
+    
+    <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+            
+            
+                    <li>
+                        <a href="
+    
+        https://andreas.hartel.me
+    
+">home</a>
+                    </li>
+                
+                    <li>
+                        <a href="
+    
+        https://andreas.hartel.me/about
+    
+">about</a>
+                    </li>
+                
+            </ul>
+
+        <ul class="menu__inner menu__inner--mobile">
+            
+        <li>
+            <a href="
+    
+        https://andreas.hartel.me
+    
+">home</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://andreas.hartel.me/about
+    
+">about</a>
+        </li>
+        </ul>
+    </nav>
+
+    </header>
+<div class="content"><article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;andreas.hartel.me&#x2F;alternating-group&#x2F;">Alternating Group</a>
+            </h1>
+            
+    <div class="post-meta">
+        <span class="post-date">2022.01.08
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    ::
+    #<a href="https://andreas.hartel.me/tags/math/">math</a>
+        
+    #<a href="https://andreas.hartel.me/tags/twitter-archive/">twitter archive</a>
+        
+    
+            
+        
+    </div>
+
+            
+    
+</header><p>In this post, I want to try to give a mostly-visual proof of an exercise I found in Dixon's
+book &quot;Problems in Group Theory&quot;:</p>
+<blockquote>
+<p>Show that the <a href="https://en.wikipedia.org/wiki/Alternating_group">alternating group</a> A4 has no subgroup of order 6.</p>
+</blockquote>
+<span id="continue-reading"></span>
+<p>Let's first note that A4 has order 12 and that according to
+<a href="https://en.wikipedia.org/wiki/Lagrange%27s_theorem_(group_theory)">Lagrange's theorem</a>, a subgroup
+of order 6 could be possible because 6 divides 12. </p>
+<p>We can also observe that A4 has a subgroup of order 4. Look at its multiplication table's upper
+left 4x4 block. The block contains the identity (black) in every row an column and there are only
+four colors involved.</p>
+<p><img src="https://andreas.hartel.me/alternating-group/600px-Cayley_table_Group_A4_RK01.svg.png" alt="Caley Table of the group A4" /></p>
+<p>Let's assume that A4 had a subgroup, call it H, of order 6. Then it had to be
+isomorphic to the symmetric group of order 3. This is because there are only 2
+groups of order 6 and A4 has no elements of order 6 and can therefore not be
+isomorphic to the cyclic group of order 6.</p>
+<p>As a side note, the fact that one can list all groups that exist, up to a
+certain finite order, was something I found surprising when I read it initially.
+It's kind of cool that you can make <a href="https://nathancarter.github.io/group-explorer/GroupExplorer.html">a complete table of the groups of low
+order</a>.</p>
+<p>Next, we check that there are no elements of order 6 in the group and that it
+therefore cannot be isomorphic to the cyclic group of order 6. A4's cycle
+diagram below only shows 2-cycles and 3-cycles.</p>
+<p><img src="https://andreas.hartel.me/alternating-group/GroupDiagramMiniA4.svg.png" alt="Group Cycle Diagram of A4" /></p>
+<p>Let's take stock:</p>
+<ol>
+<li>If our subgroup H &lt; A4 of order 6 existed, it would be isomorphic to S3. But
+S3 is a group that contains 3 elements of order 2, see below diagram.</li>
+<li>A4 also has a subgroup of order 4 containing its only 3 elements of order 2.</li>
+</ol>
+<p><img src="https://andreas.hartel.me/alternating-group/GroupDiagramMiniD6.svg.png" alt="Group Cycle Diagram of D6" /></p>
+<p>This implies that H would have to contain a subgroup of order 4. But that's a
+contradiction to Lagrange's theorem which states that every subgroup's order has
+to divide the group's order. Therefore, H cannot exist and there is no subgroup
+of order 6 inside A4.</p>
+<p>Thanks for reading and thanks to the author of this answer on math
+stackexchange: https://math.stackexchange.com/a/1334010</p>
+<p>Note to self: SVG files with transparent background and black content don't work
+well on dark background</p>
+
+
+        
+    
+
+        
+        
+    </article></div>
+    <div class="pagination">
+        <div class="pagination__buttons">
+            </div>
+    </div>
+<footer class="footer">
+                    <div class="footer__inner"><div class="copyright">
+            <span>© 2024 <a href="https://github.com/ejmg/zerm">zerm</a> :: Powered by <a href="https://www.getzola.org/">Zola</a></span>
+            <span>:: Theme made by <a href="https://github.com/ejmg">ejmg</a></span>
+        </div>
+    <script type="text/javascript" src="https://andreas.hartel.me/assets/js/main.js"></script>
+</div>
+                    
+
+                </footer></div>
+    </body>
+</html>
